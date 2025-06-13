@@ -27,11 +27,11 @@ void setup()
 {
     Serial.begin(115200);
     initPins();
+    connectToWiFi();
     initServer();
     lcd.backlight();
     lcd.clear();
     lcd.setCursor(0, 0);
-    lcd.print("Starting...");
 }
 
 void loop()
